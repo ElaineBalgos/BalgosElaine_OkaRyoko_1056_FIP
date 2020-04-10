@@ -1,0 +1,131 @@
+div {
+  margin: 0 auto;
+	box-sizing: border-box;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+}
+.icetab {
+  margin: 0 auto;
+	border: 1px solid #e2ad03;
+	display: inline-block;
+	border-bottom: 0px;
+  color: #4a4e50;
+	cursor: pointer;
+	border-right: 0px;
+}
+.icetab:last-child {
+	border-right: 1px solid #e2ad03;
+}
+
+#icetab-content {
+	overflow: hidden;
+	position: relative;
+	border-top: 1px solid #e2ad03;
+}
+
+.tabcontent {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #efefef;
+	width: 100%;
+	border-top: 0px;
+	border: 1px solid #e2ad03;
+	border-top: 0px;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+.tabcontent:first-child {
+	position: relative;
+}
+
+.tab-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	border-top: 0px;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+
+.boxDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 45%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.beerTitle {
+  padding: 0px;
+  color: #0056a8;
+  font-size: 3em;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+}
+
+.desc {
+  margin: 0 auto;
+  color: #4a4e50;
+}
+
+.addToCart {
+  color: #0056a8;
+  background: #e2ad03;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 8px 6px -6px grey;
+  padding: 0.3em;
+  font-size: 1.5em;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* A tiny wee bit of visual formating */
+body {
+	font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+	color: #4a4e50;
+}
+
+.productContainer {
+  max-width: 1083px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  /*color: #ff9900;*/
+  text-align: center;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 40px 0px;
+}
+.tabcontent {
+	padding: 40px;
+}
+.icetab {
+  color: #0056a8;
+	padding: 20px;
+  font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.current-tab {
+	background: #e2ad03;
+}
+
+@media screen and (min-width: 920px) {
+  .boxDesc {
+    max-width: 75%;
+  }
+}
